@@ -3,7 +3,7 @@ import {
   BrowserRouter, Route
 } from 'react-router-dom';
 import Navbar from './Navbar';
-import Users from '../containers/userContainer';
+import Users from './Users';
 
 class App extends Component {
   render() {

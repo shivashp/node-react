@@ -9,7 +9,7 @@ class Users extends Component {
                 <hr />
                 <ul>
                     {
-                        this.props.users.map(user => 
+                       this.props.users &&  this.props.users.map(user => 
                         <li onClick={() => this.props.select_user(user)} key={user._id}>
                             {this.props.activeUser && this.props.activeUser._id === user._id ? <b> {user.name} </b>: user.name}
                         </li>)
